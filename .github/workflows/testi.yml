@@ -1,0 +1,9 @@
+name: Testausta
+
+on: push
+
+jobs:
+    kokeile:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Heipparallaa"
