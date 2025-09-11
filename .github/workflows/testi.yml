@@ -3,6 +3,8 @@ name: Append GitHub Username to README
 on:
   push:
     branches: [main] 
+permissions:
+  contents: write
 
 jobs:
   append-username:
