@@ -7,4 +7,4 @@ jobs:
     kokeile:
         runs-on: ubuntu-latest
         steps:
-            - run: cat TEADME.md
+            - run: cat README.md
