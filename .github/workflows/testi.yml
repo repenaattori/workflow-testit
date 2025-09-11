@@ -1,6 +1,7 @@
 name: Testausta
 on: 
     push: 
+        branches: [main]
         paths: 
             - 'README.md'
 jobs:
