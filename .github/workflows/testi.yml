@@ -8,6 +8,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Testi
-              uses: actions/checkout@4
+              uses: actions/checkout@v4
             - name: Print
               run: cat README.md
