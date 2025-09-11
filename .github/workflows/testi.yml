@@ -1,14 +1,10 @@
 name: Testausta
 on: 
-    push: 
-        branches: [main]
-        paths: 
-            - 'README.md'
+    issues: 
+        type: [opened]
 jobs:
     kokeile:
         runs-on: ubuntu-latest
         steps:
-            - name: Testi
-              uses: actions/checkout@v4
             - name: Print
-              run: cat README.md
+              run: echo ${{github.event.id}}
