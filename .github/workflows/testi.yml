@@ -9,4 +9,4 @@ jobs:
             - name: Print
               run: echo $MYCONTEXT
               env:
-                  MYCONTEXT: ${{toJSON(github)}}
+                  MYCONTEXT: ${{toJSON(github.event.id)}}
