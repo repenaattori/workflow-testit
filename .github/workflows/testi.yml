@@ -7,4 +7,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Print
-              run: echo ${{toJSON(github)}}
+              run: echo $MYCONTEXT
+              env:
+                  MYCONTEXT: ${{toJSON(github}}
