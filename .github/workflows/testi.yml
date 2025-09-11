@@ -7,4 +7,7 @@ jobs:
     kokeile:
         runs-on: ubuntu-latest
         steps:
-            - run: cat README.md
+            - name: Testi
+              uses: actions/checkout@4
+            - name: Print
+              run: cat README.md
