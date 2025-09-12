@@ -6,6 +6,11 @@ on:
 permissions:
   contents: write
 
+env:
+  ACTOR: ${{github.actor}}
+  REF: ${{github.ref}}
+  MSG: ${{github.event.commits[0].message}}
+
 jobs:
   append-username:
     runs-on: ubuntu-latest
@@ -16,9 +21,6 @@ jobs:
 
       - name: Append pusher username to README.md
         run: |
-          echo "${{ github.actor }}" >> README.md
-          echo "${{ github.actor }}" >> README.md
-          echo "Appended ${{ github.actor }} to README.md"
-          echo "Appended ${{ github.ref }} to README.md"
-          echo "Appended ${{ github.run_attempt }} to README.md"
-          echo "Appended ${{ github.event.commits[0].message }} to README.md"
+          echo $ACTOR
+          echo "Appended $REF"
+          echo "Appended $MSG"
