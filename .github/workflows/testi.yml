@@ -20,5 +20,5 @@ jobs:
           echo "${{ github.actor }}" >> README.md
           echo "Appended ${{ github.actor }} to README.md"
           echo "Appended ${{ github.ref }} to README.md"
-          echo "Appended ${{ github.repository_owner }} to README.md"
+          echo "Appended ${{ github.run_attempt }} to README.md"
 
