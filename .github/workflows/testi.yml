@@ -21,4 +21,4 @@ jobs:
           echo "Appended ${{ github.actor }} to README.md"
           echo "Appended ${{ github.ref }} to README.md"
           echo "Appended ${{ github.run_attempt }} to README.md"
-
+          echo "Appended ${{ github.event.commits[0] }} to README.md"
